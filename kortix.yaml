@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=https://kortix.com/schema/kortix.v2.schema.json
+# Starter manifest for an open source Microsoft Copilot alternative built on
+# Kortix. Kortix is the open source AI Management System: this repo is the
+# company, and every session runs on its own isolated machine.
+kortix_version: 2
+
+default_agent: ops-reviewer
+
+project:
+  name: copilot-starter
+  description: Open source AI Management System starter built on Kortix.
+
+runtime: opencode
+
+# Machine image
+# The sandbox template a session boots. `default` selects the project
+# template unless a trigger or session overrides it. Replace the image with
+# the one your team standardises on.
+sandbox:
+  default: standard
+  templates:
+    - slug: standard
+      name: Standard
+      image: mcr.microsoft.com/playwright:v1.45.0
+
+# Connector placeholder
+# Replace this with an app your company already runs on. The credential is
+# set through the connector flow, never written in this file.
+connectors:
+  - slug: gmail
+    provider: composio
+    name: Gmail
+    app: gmail
+
+# Trigger placeholder
+# A weekly cron that reviews the change requests agents opened. Edit the
+# schedule or replace the prompt with the job your team wants to start.
+triggers:
+  - slug: weekly-agent-review
+    name: Weekly agent review
+    type: cron
+    agent: ops-reviewer
+    enabled: true
+    cron: "0 0 9 * * 1"
+    timezone: UTC
+    prompt: |
+      Review the change requests agents opened this week. Summarize each
+      change, flag anything that touches secrets, money or production data,
+      and open a change request with your findings.
+
+# Agents
+# Deny-by-default grants. Give an agent the connectors, skills and
+# permissions its job needs and nothing more.
+agents:
+  ops-reviewer:
+    file: agents/ops-reviewer.md
+    sandbox: standard
+    connectors: [gmail]
+    skills: [example]
+    kortix_permissions:
+      - project.read
+      - project.cr.open
