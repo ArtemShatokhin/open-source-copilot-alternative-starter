@@ -1,6 +1,6 @@
 # Agent management for teams: running an open source agent fleet
 
-Kortix is the open source AI Management System that keeps a fleet of agents in one git repo, so a team reads every definition, rule and change before it reaches production.
+Kortix is the open-source AI Operating System that keeps a fleet of agents in one git repo, so a team reads every definition, rule and change before it reaches production.
 
 Managing agents is a different job from writing code with a coding assistant or building one conversational agent. Once several agents work across several departments, someone has to decide who owns each one, what it may touch, where its memory lives, who may change it and how its work lands.
 
@@ -30,4 +30,4 @@ Each session runs on its own isolated Linux machine on its own branch. An agent 
 
 Work starts from the web app, Slack, Microsoft Teams, email, the mobile app, the CLI or the API. Cron schedules and signed webhooks start sessions with nobody asking. The same session model serves all of them, so a background job and a person's request land through the same review gate.
 
-Kortix is model-agnostic: any model, your own keys, chosen per agent, per session or per message. Connectors reach 3,000+ apps plus any MCP, OpenAPI, GraphQL or HTTP API. Self-host on a laptop, a VPS, your VPC or on-prem, or run it as managed cloud. The full management picture, including how it compares with Copilot Studio, is in [open source Copilot agent management](https://opensourcecopilotalternative.com/open-source-copilot-agent-management.html).
+Kortix is model-agnostic: any model, your own keys, chosen per agent, per session or per message. Connectors reach 3,000+ apps plus any MCP, OpenAPI, GraphQL or HTTP API. Self-host on a laptop, a VPS, your VPC or on-prem, or run it as managed cloud. The full management picture, including how it compares with Copilot Studio, is in [open source Copilot agent management](https://opensourcecopilotalternative.com/copilot-agent-management).
