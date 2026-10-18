@@ -1,10 +1,10 @@
 # Open source Microsoft Copilot alternative: frequently asked questions
 
-Kortix is the open source AI Management System, and these are the questions teams ask when they weigh it against the Copilot products Microsoft sells.
+Kortix is the open-source AI Operating System, and these are the questions teams ask when they weigh it against the Copilot products Microsoft sells.
 
 ## Is Microsoft Copilot open source?
 
-Microsoft Copilot is not open source. Microsoft 365 Copilot, GitHub Copilot and Copilot Studio are proprietary services that Microsoft sells and hosts in its own cloud. GitHub publishes the Copilot Chat extension for VS Code under the MIT licence, and that extension is an editor front end; the Copilot service and the models behind it stay with Microsoft. Kortix is the open source system a team owns instead. [Is Copilot open source?](https://opensourcecopilotalternative.com/is-copilot-open-source.html) covers all three products.
+Microsoft Copilot is not open source. Microsoft 365 Copilot, GitHub Copilot and Copilot Studio are proprietary services that Microsoft sells and hosts in its own cloud. GitHub publishes the Copilot Chat extension for VS Code under the MIT licence, and that extension is an editor front end; the Copilot service and the models behind it stay with Microsoft. Kortix is the open source system a team owns instead. [Is Copilot open source?](https://opensourcecopilotalternative.com/faq) covers all three products.
 
 ## Can you self-host a Copilot alternative?
 
@@ -32,4 +32,4 @@ Each session runs on an isolated Linux machine on its own branch. When the work 
 
 ## Can Kortix reach the tools my team already uses?
 
-Yes. Kortix connects 3,000+ apps plus any MCP, OpenAPI, GraphQL or HTTP API, with credentials brokered server-side so they never enter the machine. Every tool call can be set to allow, ask or block, down to the arguments of a single command. [Open source Copilot agent management](https://opensourcecopilotalternative.com/open-source-copilot-agent-management.html) shows the permissions model in full.
+Yes. Kortix connects 3,000+ apps plus any MCP, OpenAPI, GraphQL or HTTP API, with credentials brokered server-side so they never enter the machine. Every tool call can be set to allow, ask or block, down to the arguments of a single command. [Open source Copilot agent management](https://opensourcecopilotalternative.com/copilot-agent-management) shows the permissions model in full.
