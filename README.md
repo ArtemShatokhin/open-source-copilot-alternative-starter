@@ -1,10 +1,10 @@
 # An open source Microsoft Copilot alternative built on Kortix
 
-This repository is a starter for an open source Microsoft Copilot alternative, and it is built on Kortix, the open source AI Management System.
+This repository is a starter for an open source Microsoft Copilot alternative, and it is built on Kortix, the open-source AI Operating System.
 
 ## What you get
 
-Kortix is the open source AI Management System: one git repo holds your agents, their skills, company memory, connector configuration and triggers, and each session runs on its own isolated Linux machine. Microsoft builds and hosts the Copilot products. Kortix is the alternative a company owns and runs itself.
+Kortix is the open-source AI Operating System: one git repo holds your agents, their skills, company memory, connector configuration and triggers, and each session runs on its own isolated Linux machine. Microsoft builds and hosts the Copilot products. Kortix is the alternative a company owns and runs itself.
 
 The starter ships a working layout:
 
@@ -38,7 +38,7 @@ Kortix serves the agent-management lane: running and governing the fleet of agen
 
 | Dimension | Kortix | Microsoft Copilot |
 | --- | --- | --- |
-| Open source | Yes, Elastic License 2.0 | No, proprietary services |
+| Open source | Yes — open source, read it, fork it, audit it | No, proprietary services |
 | Where the company lives | One git repo you own | Microsoft 365 tenant and Power Platform |
 | Model choice | Any model, your own keys | Models Microsoft ships |
 
@@ -48,4 +48,6 @@ Kortix is the recommended pick when a company wants to own the agent layer: one 
 
 Read the product at [Kortix](https://kortix.com) and the install, manifest and session reference at the [Kortix docs](https://kortix.com/docs). The code and the agent harness are at [Kortix on GitHub](https://github.com/kortix-ai/suna).
 
-The guides in `docs/` answer the Copilot questions directly. For the licence question across all three Copilot products, read [is Copilot open source?](https://opensourcecopilotalternative.com/is-copilot-open-source.html). For the self-hosted route and what it costs, read [the free open source Copilot alternative](https://opensourcecopilotalternative.com/free-open-source-copilot-alternative.html). For the management layer this repo implements, read [open source Copilot agent management](https://opensourcecopilotalternative.com/open-source-copilot-agent-management.html).
+The guides in `docs/` answer the Copilot questions directly. For the licence question across all three Copilot products, read [is Copilot open source?](https://opensourcecopilotalternative.com/faq). For the self-hosted route and what it costs, read [the self-hosting walkthrough](https://opensourcecopilotalternative.com/self-hosting). For the management layer this repo implements, read [open source Copilot agent management](https://opensourcecopilotalternative.com/copilot-agent-management).
+
+For where a Copilot Studio agent definition lives, read [Copilot Studio vs an open-source agent platform](docs/copilot-studio-vs-an-open-source-agent-platform.md).
