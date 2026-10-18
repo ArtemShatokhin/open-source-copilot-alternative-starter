@@ -1,10 +1,10 @@
 # How to self-host an open source Copilot alternative
 
-Kortix is the open source AI Management System, and self-hosting it replaces a per-seat Copilot add-on with a system a team runs on its own hardware and keeps in one git repo.
+Kortix is the open-source AI Operating System, and self-hosting it replaces a per-seat Copilot add-on with a system a team runs on its own hardware and keeps in one git repo.
 
 ## What self-hosting changes
 
-Self-hosting removes the vendor cloud from the agent platform. The agents, their skills, company memory, connector configuration and triggers become files in one git repo, and each session runs on an isolated Linux machine that boots from a config the team owns. The model runs on the team's own API keys, so the token bill is visible line by line. Microsoft 365 Copilot stays inside Microsoft's cloud and is sold per user. A self-hosted Kortix deployment carries no per-seat licence from Kortix, so cost follows compute and model usage rather than headcount. [The free open source Copilot alternative](https://opensourcecopilotalternative.com/free-open-source-copilot-alternative.html) works through that cost difference in detail.
+Self-hosting removes the vendor cloud from the agent platform. The agents, their skills, company memory, connector configuration and triggers become files in one git repo, and each session runs on an isolated Linux machine that boots from a config the team owns. The model runs on the team's own API keys, so the token bill is visible line by line. Microsoft 365 Copilot stays inside Microsoft's cloud and is sold per user. A self-hosted Kortix deployment carries no per-seat licence from Kortix, so cost follows compute and model usage rather than headcount. [The free open source Copilot alternative](https://opensourcecopilotalternative.com/is-microsoft-copilot-free) works through that cost difference in detail.
 
 ## Prerequisites
 
@@ -56,7 +56,7 @@ Start a session from the web app, Slack, Microsoft Teams, email, the CLI or the 
 
 ### Does self-hosting Kortix cost a per-seat licence?
 
-No. Kortix is open source (Elastic License 2.0), so a self-hosted deployment carries no per-seat licence from Kortix. You pay for the compute you run it on and the model tokens your agents spend through your own provider keys. Managed cloud is a separate, optional path for teams that would rather not run the machine.
+No. Kortix is open source, so a self-hosted deployment carries no per-seat licence from Kortix. You pay for the compute you run it on and the model tokens your agents spend through your own provider keys. Managed cloud is a separate, optional path for teams that would rather not run the machine.
 
 ### Which models can a self-hosted Kortix use?
 
